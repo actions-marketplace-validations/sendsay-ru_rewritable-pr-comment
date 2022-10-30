@@ -2,17 +2,17 @@
   "name": "rewritable-pr-comment",
   "version": "1.0.0",
   "description": "Github Action that posts a PR / issue comment that re-writes itself on update",
+  "license": "ISC",
+  "author": "phulsechinmay",
   "main": "index.js",
   "scripts": {
-    "build": "ncc build index.js -o dist"
+    "build": "esbuild ./index.js --bundle --platform=node --target=node16 --outfile=dist/index.js"
   },
-  "author": "phulsechinmay",
-  "license": "ISC",
   "dependencies": {
     "@actions/core": "^1.10.0",
     "@actions/github": "^2.2.0",
     "@octokit/core": "^2.5.3",
     "@octokit/rest": "^17.9.2",
-    "@zeit/ncc": "^0.22.3"
+    "esbuild": "0.15.12"
   }
 }
