@@ -18,10 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     # ... Steps that build / test / anything else that's needed
-    - uses: phulsechinmay/rewritable-pr-comment@v0.2.1
+    - uses: sendsay-ru/rewritable-pr-comment@v0.2.1
       with:
         message: ${{ steps.ci-tests.output.message }} # Print the output message from a step that tests something
-        GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         COMMENT_IDENTIFIER: "test-output-comment-rewritable-action" # Put some identifier here that will be unique among comments in the PR
 ```
 

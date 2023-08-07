@@ -1,4 +1,4 @@
-name: 'Rewritable Pull Request / Issue Comment'
+name: 'Rewritable Pull Request or Issue Comment'
 branding:
   icon: 'message-circle'  
   color: 'red'
